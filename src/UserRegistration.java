@@ -16,4 +16,9 @@ public class UserRegistration {
         return Pattern.matches("^[a-zA-Z0-9]+([._+-]?[a-zA-Z0-9]+)*@[a-zA-Z0-9]+\\.[a-zA-Z]{2,}(\\.[a-zA-Z]{2,})?$", email);
     }
 
+    // UC4: Validate Mobile Number
+    public boolean validateMobileNumber(String mobileNumber) {
+        return Pattern.matches("^[0-9]{2} [0-9]{10}$", mobileNumber);
+    }
+
 }
