@@ -11,4 +11,9 @@ public class UserRegistration {
         return Pattern.matches("^[A-Z][a-zA-Z]{2,}$", lastName);
     }
 
+    // UC3: Validate Email
+    public boolean validateEmail(String email) {
+        return Pattern.matches("^[a-zA-Z0-9]+([._+-]?[a-zA-Z0-9]+)*@[a-zA-Z0-9]+\\.[a-zA-Z]{2,}(\\.[a-zA-Z]{2,})?$", email);
+    }
+
 }
