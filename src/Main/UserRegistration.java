@@ -1,3 +1,5 @@
+package Main;
+
 import java.util.regex.Pattern;
 
 public class UserRegistration {
@@ -30,6 +32,11 @@ public class UserRegistration {
 
         String combinedRule = rule1 + rule2 + rule3 + rule4;
         return Pattern.matches(combinedRule, password);
+    }
+
+    // UC9: Validate all email samples
+    public boolean validateEmailSamples(String email) {
+        return validateEmail(email);
     }
 
 }
