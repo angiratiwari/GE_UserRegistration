@@ -32,4 +32,9 @@ public class UserRegistration {
         return Pattern.matches(combinedRule, password);
     }
 
+    // UC9: Validate all email samples
+    public boolean validateEmailSamples(String email) {
+        return validateEmail(email);
+    }
+
 }
