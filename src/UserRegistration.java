@@ -6,4 +6,9 @@ public class UserRegistration {
         return Pattern.matches("^[A-Z][a-zA-Z]{2,}$", firstName);
     }
 
+    // UC2: Validate Last Name
+    public boolean validateLastName(String lastName) {
+        return Pattern.matches("^[A-Z][a-zA-Z]{2,}$", lastName);
+    }
+
 }
